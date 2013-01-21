@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="net.stevemiller.android.referrertest"
+    android:versionCode="2"
+    android:versionName="1.00"
+    android:installLocation="auto"
+    >
+
+    <uses-sdk
+        android:minSdkVersion="3"
+        android:targetSdkVersion="17"
+    />
+
+    <supports-screens
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true"
+        android:anyDensity="true"
+    />
+
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false"
+    />
+
+    <application
+        android:name=".MainApplication"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:debuggable="true"
+        >
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/activity_name"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection|fontScale"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <receiver
+            android:name=".ReferrerReceiver"
+            android:exported="true"
+            >
+
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+
+        </receiver>
+
+    </application>
+
+</manifest>

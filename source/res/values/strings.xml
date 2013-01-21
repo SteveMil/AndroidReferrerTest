@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <string name="app_name">Referrer Test for Google Play</string>
+    <string name="activity_name">Referrer Test</string>
+    <string name="menuitem_clear">Clear</string>
+    <string name="menuitem_uninstall">Uninstall</string>
+
+</resources>
