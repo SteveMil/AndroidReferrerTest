@@ -1,3 +1,15 @@
+June 2015 Update
+================
+
+After 2-1/2 years of being in the Play Store, Google has banned my application
+without warning because my icon contained a portion of the Google Play icon
+within it.  I offered to change the icon and submit a new version, but I was
+told my app is banned for life.  I'm not sure those terms even existed 2-1/2
+years ago, but nonetheless, the terms do exist now and it appears my icon
+probably does violates the terms.  My bad.  I'm told I can create a new account
+and submit a brand new app, but I think I'm done with Google Play for now.
+
+
 AndroidReferrerTest
 ===================
 
